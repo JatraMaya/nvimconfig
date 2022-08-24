@@ -1,4 +1,5 @@
 require "jatra.options"
+require "jatra.keymaps"
 require "jatra.plugins"
 require "jatra.colorschemes"
 require "jatra.treesitter"
