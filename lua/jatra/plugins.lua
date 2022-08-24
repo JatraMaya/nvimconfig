@@ -49,6 +49,13 @@ return packer.startup(function(use)
   use "terrortylor/nvim-comment" -- plugin for comment toggling
   use "windwp/nvim-autopairs" -- vim-autopairs lua version
 
+  -- Add nvim-tree
+  use {
+      "kyazdani42/nvim-tree.lua",
+      requires = {
+          "kyazdani42/nvim-web-devicons",
+      }
+  }
   -- For Cmp (Completion) support
   use {
     "hrsh7th/cmp-nvim-lsp",
@@ -59,7 +66,6 @@ return packer.startup(function(use)
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
  }
-
 
   -- For LSP support
   use {
@@ -73,7 +79,6 @@ return packer.startup(function(use)
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate"
   }
-
 
   -- Add lua-line with devicons support
   use {
