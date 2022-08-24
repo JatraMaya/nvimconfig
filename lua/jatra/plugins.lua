@@ -48,6 +48,8 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- Plugin for adding extra colorschemes
   use "terrortylor/nvim-comment" -- plugin for comment toggling
   use "windwp/nvim-autopairs" -- vim-autopairs lua version
+  use "onsails/lspkind.nvim" -- Add pictogram vs-code look alike in neovim builtin-lsp
+  use "jose-elias-alvarez/null-ls.nvim" -- Add null-ls
 
   -- Add nvim-tree
   use {
