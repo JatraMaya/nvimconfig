@@ -1,3 +1,5 @@
+-- Before you able to use this file
+-- please be sure that all the necessary binary (e.g. prettier, black) is already installed on the device
 local null = require("null-ls")
 
 null.setup({
