@@ -53,6 +53,11 @@ return packer.startup(function(use)
 	use("simrat39/rust-tools.nvim") -- Add extra functionality for rust_analyzer lsp plugin
 	use("p00f/nvim-ts-rainbow") -- Add rainbow plugin for treesitter
 
+	use({
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.0",
+	})
+
 	-- Add gits signs
 	use({
 		"lewis6991/gitsigns.nvim",
