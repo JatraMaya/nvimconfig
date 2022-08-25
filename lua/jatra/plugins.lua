@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- vim-autopairs lua version
   use "onsails/lspkind.nvim" -- Add pictogram vs-code look alike in neovim builtin-lsp
   use "jose-elias-alvarez/null-ls.nvim" -- Add null-ls
+  use "simrat39/rust-tools.nvim" -- Add extra functionality for rust_analyzer lsp plugin
 
   -- Add nvim-tree
   use {
