@@ -51,8 +51,18 @@ mason_lsp.setup_handlers({
 			capabilities = capabilities,
 		})
 	end,
+	["tsserver"] = function()
+		lspconfig.tsserver.setup({
+			on_attach = function(client, bufnr)
+				client.resolved_capabilities.document_formatting = false
+			end,
+		})
+	end,
 	["sumneko_lua"] = function()
 		lspconfig.sumneko_lua.setup({
+			on_attach = function(client, bufnr)
+				client.resolved_capabilities.document_formatting = false
+			end,
 			settings = {
 				Lua = {
 					diagnostics = {
