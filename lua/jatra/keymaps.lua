@@ -13,6 +13,8 @@ k("n", "<C-h>", "<C-w>h", opts)
 k("n", "<C-j>", "<C-w>j", opts)
 k("n", "<C-k>", "<C-w>k", opts)
 
+k("n", "<leader>f", ":lua vim.lsp.buf.formatting_sync()<CR>") -- set leader + f to autoformat with null-ls
+
 k("i", "jj", "<Esc>", opts) -- Exit insert mode when press jk simultaneously
 k("n", "<leader>.", ":NvimTreeToggle<CR>", opts) -- map Ctrl+f to toggle NvimTree
 k("n", "<leader>/", ":CommentToggle<CR>", opts) -- map Ctrl+c to toggle comment
