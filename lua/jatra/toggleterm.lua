@@ -1,6 +1,7 @@
 local terminal = require("toggleterm")
 
 terminal.setup({
-	size = 20,
+	size = 10,
 	direction = "horizontal",
+	-- close_on_exit = true,
 })
