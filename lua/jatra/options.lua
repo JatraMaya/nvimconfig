@@ -33,6 +33,8 @@ local options = {
 	scrolloff = 8, -- is one of my fav
 	sidescrolloff = 8,
 	guifont = "monospace:h17", -- the font used in graphical neovim applications
+	foldmethod = "expr",
+	foldexpr = "nvim_treesitter#foldexpr()",
 }
 
 vim.opt.shortmess:append("c")
@@ -45,6 +47,10 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 
--- Setup nvim_comment
+-- TODO This doesn't seem to work at the moment
+-- Setting to make suere all fold are open when opening file for first time
+-- vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost" }, { pattern = "*", command = "normal zR" })
+
+-- Basic Setup for some plugin
 require("telescope").setup()
 require("nvim_comment").setup()
