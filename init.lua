@@ -1,10 +1,11 @@
-require "jatra.options"
-require "jatra.keymaps"
-require "jatra.plugins"
-require "jatra.colorschemes"
-require "jatra.treesitter"
-require "jatra.lsp"
-require "jatra.cmp"
-require "jatra.nvimtree"
-require "jatra.autopairs"
-require "jatra.null-ls"
+require("jatra.options")
+require("jatra.keymaps")
+require("jatra.plugins")
+require("jatra.colorschemes")
+require("jatra.treesitter")
+require("jatra.lsp")
+require("jatra.cmp")
+require("jatra.nvimtree")
+require("jatra.autopairs")
+require("jatra.null-ls")
+require("jatra.toggleterm")
