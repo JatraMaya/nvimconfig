@@ -7,10 +7,11 @@ end
 tree.setup({
 	sort_by = "case_sensitive",
 	view = {
-		adaptive_size = true,
+		adaptive_size = false,
 	},
 	renderer = {
 		group_empty = false,
+		full_name = false,
 	},
 	filters = {
 		dotfiles = true,
