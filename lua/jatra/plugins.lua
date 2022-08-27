@@ -52,6 +52,7 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim") -- Add null-ls
 	use("simrat39/rust-tools.nvim") -- Add extra functionality for rust_analyzer lsp plugin
 	use("p00f/nvim-ts-rainbow") -- Add rainbow plugin for treesitter
+	use("startup-nvim/startup.nvim") -- Add fancy startup screen ## This plugin require Telescope and Plenary to function properly
 
 	-- Add telescope plugin
 	use({
