@@ -50,13 +50,11 @@ vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 -- TODO This doesn't seem to work at the moment
 -- Setting to make suere all fold are open when opening file for first time
 local auto_fold_group = vim.api.nvim_create_augroup("autoFold", { clear = true })
-vim.api.nvim_create_autocmd("BufEnter", {
+vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost" }, {
     pattern = "*",
     command = "normal zR",
     group = auto_fold_group,
 })
--- vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost" },
---     { pattern = "*", command = "normal zR", group = auto_fold_group })
 
 -- Basic Setup for some plugin
 require("telescope").setup()
